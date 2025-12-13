@@ -18,10 +18,10 @@
         <ul>
           <li><a href="#hero">Início</a></li>
           <li><a href="#historia">História</a></li>
-          <li><a href="#faccoes">Facções</a></li>
           <li><a href="#personagens">Personagens</a></li>
-          <li><a href="#crafting">Crafting</a></li>
-          <li><a href="#infeccao">Infeção</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#mapa">Localização</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
         </ul>
       </nav>
     </header>
@@ -32,6 +32,14 @@
           <h2>Quando estiveres perdido na escuridão...</h2>
           <p>Procura a luz.</p>
         </hgroup>
+        <div style="margin-top: 20px">
+          <video controls width="300" poster="assets/img/firefly-logo.jpg" title="Trailer The Last of Us">
+            <source src="assets/video/trailer.mp4" type="video/mp4" />
+            <track src="assets/video/trailer-pt.vtt" kind="subtitles" srclang="pt" label="Português" default />
+            O teu navegador não suporta a tag de vídeo.
+          </video>
+        </div>
+        <br />
         <a href="#historia">Iniciar Jornada</a>
       </section>
 
@@ -40,8 +48,7 @@
         <p>
           Vinte anos após uma estirpe de fungo <em>Cordyceps</em> ter devastado
           a civilização moderna, a sociedade desmoronou. Cidades foram
-          reclamadas pela natureza e os sobreviventes matam-se por comida, armas
-          ou apenas pelo território.
+          reclamadas pela natureza.
         </p>
       </article>
 
@@ -51,10 +58,7 @@
 
         <details>
           <summary><strong>FEDRA</strong> (Agência Federal)</summary>
-          <p>
-            Remanescentes do governo militar. Controlam as Zonas de Quarentena
-            com mão de ferro, impondo lei marcial.
-          </p>
+          <p>Remanescentes do governo militar. Lei marcial.</p>
         </details>
 
         <details>
@@ -66,18 +70,12 @@
             />
             <strong>Vagalumes</strong> (Fireflies)
           </summary>
-          <p>
-            Uma milícia revolucionária que luta contra a opressão militar e
-            procura uma cura para o fungo.
-          </p>
+          <p>Uma milícia revolucionária que procura a cura.</p>
         </details>
 
         <details>
           <summary><strong>Caçadores</strong> (Hunters)</summary>
-          <p>
-            Sobreviventes hostis que emboscam "turistas" para roubar
-            mantimentos. Sobrevivência brutal.
-          </p>
+          <p>Sobreviventes hostis que roubam mantimentos.</p>
         </details>
       </section>
 
@@ -94,7 +92,7 @@
             />
             <figcaption>O Contrabandista</figcaption>
           </figure>
-          <p>Um sobrevivente implacável, moldado pela perda da sua filha.</p>
+          <p>Um sobrevivente implacável.</p>
         </article>
 
         <article>
@@ -107,37 +105,47 @@
             />
             <figcaption>A Esperança</figcaption>
           </figure>
-          <p>Uma órfã de 14 anos que carrega o segredo da imunidade.</p>
+          <p>Imune à infeção cerebral.</p>
         </article>
       </section>
 
-      <section id="rota">
-        <h2>A Rota da Viagem</h2>
-        <ol>
-          <li>
-            <strong>Boston:</strong> O ponto de partida na Zona de Quarentena.
-          </li>
-          <li><strong>Lincoln:</strong> A cidade armadilhada do Bill.</li>
-          <li><strong>Pittsburgh:</strong> Território hostil dos caçadores.</li>
-          <li><strong>Jackson:</strong> A represa e o reencontro com Tommy.</li>
-          <li><strong>Colorado:</strong> A universidade abandonada.</li>
-          <li>
-            <strong>Salt Lake City:</strong> O hospital e o destino final.
-          </li>
-        </ol>
+      <section id="galeria">
+        <h2>Outras Missões (Galeria)</h2>
+        <p>Registos visuais de outras zonas de quarentena.</p>
+
+        <figure>
+          <img
+            src="https://placehold.co/400x300/4a5e32/white?text=Zona+Boston"
+            alt="Projeto Zona de Boston"
+          />
+          <figcaption>Missão 1: Zona de Boston</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/400x300/8b0000/white?text=Universidade"
+            alt="Projeto Universidade"
+          />
+          <figcaption>Missão 2: A Universidade</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/400x300/f2c94c/black?text=Jackson"
+            alt="Projeto Represa"
+          />
+          <figcaption>Missão 3: Represa de Jackson</figcaption>
+        </figure>
       </section>
 
       <section id="crafting">
         <h2>Manual de Sobrevivência</h2>
-        <p>Recursos são escassos. Aprende a criar o essencial.</p>
-
         <table>
           <thead>
             <tr>
               <th>Ícone</th>
               <th>Item</th>
               <th>Receita</th>
-              <th>Efeito</th>
             </tr>
           </thead>
           <tbody>
@@ -151,7 +159,6 @@
               </td>
               <td>Kit Médico</td>
               <td>Álcool + Trapo</td>
-              <td>Recupera saúde.</td>
             </tr>
             <tr>
               <td>
@@ -163,13 +170,6 @@
               </td>
               <td>Coquetel Molotov</td>
               <td>Álcool + Trapo</td>
-              <td>Dano de fogo em área.</td>
-            </tr>
-            <tr>
-              <td>🔪</td>
-              <td>Faca (Shiv)</td>
-              <td>Lâmina + Fita</td>
-              <td>Ataque furtivo / Abrir portas.</td>
             </tr>
           </tbody>
         </table>
@@ -177,46 +177,43 @@
 
       <section id="infeccao">
         <h2>Estágios da Infeção</h2>
-
         <article>
           <h3>Estágio 1: Runner</h3>
           <figure>
             <img
               src="assets/img/runner.jpg"
-              alt="Runner com olhos vermelhos correndo"
+              alt="Runner correndo"
               width="300"
             />
             <figcaption>Rápidos e Agressivos</figcaption>
           </figure>
-          <p>
-            Ocorre 1 a 2 dias após a infeção. Mantêm aparência humana, mas
-            perdem a consciência.
-          </p>
         </article>
+      </section>
 
-        <article>
-          <h3>Estágio 3: Clicker</h3>
-          <figure>
-            <img
-              src="assets/img/clicker.jpg"
-              alt="Clicker com fungo a explodir da cabeça"
-              width="300"
-            />
-            <figcaption>Cegos e Letais</figcaption>
-          </figure>
-          <p>
-            Após 1 ano de exposição. Usam ecolocalização para caçar. Ataque
-            fatal.
-          </p>
-        </article>
+      <section id="mapa">
+        <h2>Destino Final: Hospital St. Mary</h2>
+        <iframe
+        title="Hospital"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.897368686367!2d-111.84948792397194!3d40.76417797138596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87525f776077391b%3A0x8677028135896000!2sUniversity%20of%20Utah%20Hospital!5e0!3m2!1spt-PT!2spt!4v1709565000000!5m2!1spt-PT!2spt"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </section>
 
-        <article>
-          <h3>Estágio 4: Bloater</h3>
-          <p>
-            <strong>Descrição:</strong> Cobertos por placas de fungo blindadas.
-            Extremamente difíceis de matar e lançam bombas de esporos.
-          </p>
-        </article>
+      <section id="sobre">
+        <h2>Sobre a Desenvolvedora</h2>
+        <figure>
+          <img
+            src="https://placehold.co/150x150?text=Debora"
+            alt="Foto de perfil de Débora Andrade a sorrir"
+            width="150"
+            style="border-radius: 50%"
+          />
+          <figcaption>Débora Andrade</figcaption>
+        </figure>
+        <p>Desenvolvedora Front-end apaixonada por tecnologia e jogos.</p>
       </section>
     </main>
 
@@ -224,9 +221,18 @@
       <p>"Endure and Survive"</p>
       <small>&copy; 2025 Débora Andrade</small>
 
-      <address>
-        <a href="https://github.com/debsandrade" target="_blank">GitHub</a>
-      </address>
+      <section id="contactos">
+        <h4>Canais de Comunicação:</h4>
+        <ul>
+          <li>
+            Email: <a href="mailto:debora@exemplo.com">debora@exemplo.com</a>
+          </li>
+          <li>Rádio: <a href="tel:+351910000000">+351 910 000 000</a></li>
+          <li>
+            <a href="https://github.com/debsandrade" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>

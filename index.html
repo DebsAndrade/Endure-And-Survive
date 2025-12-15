@@ -22,6 +22,7 @@
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#mapa">Localização</a></li>
           <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#formulario">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -69,11 +70,7 @@
 
         <details>
           <summary>
-            <img
-              src="assets/img/fedra.png"
-              alt="Logo FEDRA"
-              height="40" 
-              >
+            <img src="assets/img/fedra.png" alt="Logo FEDRA" height="40" />
             <strong>FEDRA</strong> (Agência Federal)
           </summary>
           <p>Remanescentes do governo militar. Lei marcial.</p>
@@ -85,7 +82,7 @@
               src="assets/img/firefly-logo.jpg"
               alt="Logo Vagalumes"
               height="40"
-            >
+            />
             <strong>Vagalumes</strong> (Fireflies)
           </summary>
           <p>Uma milícia revolucionária que procura a cura.</p>
@@ -97,7 +94,7 @@
               src="assets/img/hunters.jpeg"
               alt="Logo Caçadores"
               height="40"
-            >
+            />
             <strong>Caçadores</strong> (Hunters)
           </summary>
           <p>Sobreviventes hostis que roubam mantimentos.</p>
@@ -115,7 +112,7 @@
               alt="Joel Miller, homem de barba grisalha com olhar cansado"
               height="300"
               width="400"
-            >
+            />
             <figcaption>O Contrabandista</figcaption>
           </figure>
           <p>Um sobrevivente implacável.</p>
@@ -129,7 +126,7 @@
               alt="Ellie Williams, adolescente ruiva com cicatriz na sobrancelha"
               height="300"
               width="400"
-            >
+            />
             <figcaption>A Esperança</figcaption>
           </figure>
           <p>Imune à infeção cerebral.</p>
@@ -222,6 +219,8 @@
         <iframe
           title="Hospital"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.897368686367!2d-111.84948792397194!3d40.76417797138596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87525f776077391b%3A0x8677028135896000!2sUniversity%20of%20Utah%20Hospital!5e0!3m2!1spt-PT!2spt!4v1709565000000!5m2!1spt-PT!2spt"
+          height="400"
+          style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -242,11 +241,60 @@
         </figure>
         <p>Desenvolvedora Front-end apaixonada por tecnologia e jogos.</p>
       </section>
+
+      <section id="formulario">
+        <h2>Enviar Transmissão (Contacto)</h2>
+        <p>
+          Tens uma proposta ou queres juntar-te à equipa? Envia uma mensagem via
+          rádio.
+        </p>
+
+        <form onsubmit="enviarForm(event)">
+          <label for="nome">Nome de Sobrevivente:</label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            placeholder="Ex: Joel Miller"
+          /><br /><br />
+
+          <label for="email">Frequência de Rádio (Email):</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="nome@exemplo.com"
+          /><br /><br />
+
+          <label for="assunto">Motivo do Contacto:</label><br />
+          <select id="assunto" name="assunto">
+            <option value="recrutamento">Recrutamento / Proposta</option>
+            <option value="freelance">Freelance</option>
+            <option value="ajuda">Pedido de Ajuda</option>
+            <option value="outro">Outro</option></select
+          ><br /><br />
+
+          <label for="mensagem">Mensagem (Criptografada):</label><br />
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            minlength="10"
+            required
+            placeholder="Escreve aqui... (Mínimo 10 caracteres)"
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Enviar Transmissão 📻</button>
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer">
       <p>"Endure and Survive"</p>
-      <small>&copy; 2025 Débora Andrade</small>
+      <small>© 2025 Débora Andrade</small>
 
       <section id="contactos">
         <h4>Canais de Comunicação:</h4>
@@ -261,5 +309,6 @@
         </ul>
       </section>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

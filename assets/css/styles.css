@@ -24,8 +24,9 @@ h6 {
 
 header {
   background-image: url("../img/the-last-of-us-wallpaper.webp");
+  background-repeat: no-repeat;
   padding: 1rem 2rem;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #4a5e32;
@@ -39,8 +40,13 @@ header h1 {
   font-weight: 700;
 }
 
-header li {
+header nav ul {
   list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+header li {
   display: inline;
   margin-left: 20px;
 }
@@ -48,6 +54,15 @@ header li {
 a {
   color: #4a5e32;
   text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+header nav a:hover {
+  color: #8db600;
+  text-shadow: 0 0 5px rgba(141, 182, 0, 0.5);
 }
 
 #hero h2 {

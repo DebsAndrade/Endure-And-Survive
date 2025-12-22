@@ -11,17 +11,46 @@ body {
   color: #e0e0e0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header {
+  background-image: url("../img/the-last-of-us-wallpaper.webp");
+  padding: 1rem 2rem;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4a5e32;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header h1 {
-    font-weight: 700;
+  text-align: start;
+  font-weight: 700;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+}
+
+a {
+  color: #4a5e32;
+  text-decoration: none;
 }
 
 #hero h2 {
-    font-family: 'Oswald', sans-serif; 
-    font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
 }

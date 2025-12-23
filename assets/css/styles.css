@@ -1,9 +1,10 @@
 :root {
-  --bg-color: #1a1a1a;        /* Fundo principal */
-  --text-color: #e0e0e0;      /* Texto geral */
-  --primary-color: #4a5e32;   /* Verde Musgo (Bordas, Links) */
-  --accent-color: #8db600;    /* Verde Vagalume (Hover, Destaques) */
-  --card-bg: #2a2a2a;         /* Fundo dos cartões/details */
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;      /* Cinza Claro (Ótimo contraste) */
+  --primary-color: #4a5e32;   /* Verde Musgo (SÓ para bordas e fundos grandes) */
+  --link-color: #a4c66d;      /* NOVO: Um verde mais claro para textos de link */
+  --accent-color: #8db600;    /* Verde Vagalume (Hover) */
+  --card-bg: #2a2a2a;
   --font-title: "Oswald", sans-serif;
   --font-body: "Roboto", sans-serif;
 }
@@ -13,6 +14,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* MELHORIA DE ACESSIBILIDADE: Foco visível ao usar a tecla TAB */
+*:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 body {
@@ -36,15 +43,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: #000;
 }
 
 header h1 {
   text-align: start;
   font-weight: 700;
+  color: #fff;
 }
 
 header nav ul {
@@ -54,7 +63,7 @@ header nav ul {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--link-color);
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -62,9 +71,14 @@ a {
   font-size: 0.9rem;
 }
 
+header nav a {
+    color: #f0f0f0;
+}
+
 header nav a:hover {
   color: var(--accent-color);
   text-shadow: 0 0 5px rgba(141, 182, 0, 0.5);
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse para gerar acessibilidade para pessoas daltónicas. */
 }
 
 /* --- 4. HERO --- */
@@ -79,12 +93,12 @@ header nav a:hover {
 #hero h2 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 #hero p {
   font-size: 1.2rem;
-  color: #a0a0a0;
+  color: #cccccc;
   margin-bottom: 2rem;
   font-style: italic;
 }
@@ -99,6 +113,7 @@ header nav a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   width: 700px;
   height: 400px;
+  max-width: 100%;
 }
 
 /* --- 5. HISTÓRIA --- */
@@ -120,7 +135,7 @@ header nav a:hover {
 
 #historia p {
   font-size: 1.1rem;
-  color: #ccc;
+  color: #e0e0e0;
   text-align: justify;
 }
 
@@ -133,17 +148,18 @@ header nav a:hover {
 #faccoes h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 #faccoes > p {
   margin-bottom: 3rem;
-  color: #a0a0a0;
+  color: #ccc;
 }
 
 details {
   background-color: var(--card-bg);
   margin-bottom: 1rem;
-  border: 1px solid #444;
+  border: 1px solid #555;
   border-radius: 8px;
   overflow: hidden;
   text-align: left;
@@ -162,6 +178,7 @@ summary {
   font-family: var(--font-title);
   font-size: 1.2rem;
   background-color: #333;
+  color: #fff;
   transition: background-color 0.3s;
 }
 
@@ -174,13 +191,14 @@ summary img {
   width: 180px;
   height: 180px;
   object-fit: contain;
+  border-radius: 4px;
 }
 
 details p {
   padding: 1.5rem;
   border-top: 1px solid #555;
   background-color: #222;
-  color: #d1d1d1;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
@@ -206,9 +224,10 @@ details[open] summary {
 }
 
 #personagens h2 {
-  width: 100%; /* Garante que o título fica em cima */
+  width: 100%;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  color: #fff;
 }
 
 #personagens article {
@@ -266,11 +285,12 @@ details[open] summary {
 .intro-galeria h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .intro-galeria p {
   margin-bottom: 3rem;
-  color: #a0a0a0;
+  color: #ccc;
 }
 
 #galeria figure {

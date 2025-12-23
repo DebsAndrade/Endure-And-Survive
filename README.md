@@ -28,7 +28,7 @@ Nesta primeira fase, o foco total foi na **Estrutura HTML5 Semântica**. Nada de
 ## 🗺️ Roteiro de Desenvolvimento (Roadmap)
 
 - [x] **Semana 1:** Estrutura HTML e Conteúdo.
-- [ ] **Semana 2:** Estilização com CSS (Layout).
+- [x] **Semana 2:** Estilização com CSS (Layout).
 - [ ] **Semana 3:** Acessibilidade e Refinamento final.
 
 ---

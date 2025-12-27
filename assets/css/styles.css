@@ -475,3 +475,187 @@ details[open] summary {
 .flip-card-back strong {
   color: #fff;
 }
+
+/* --- 11. MAPA & LOCALIZAÇÃO --- */
+#mapa {
+  text-align: center;
+  padding: 2rem 2rem 4rem 2rem;
+  background-color: var(--bg-color);
+}
+
+#mapa h2 {
+    margin-bottom: 2rem;
+}
+
+#mapa iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  filter: grayscale(0.5); /* Deixa o mapa meio cinza para combinar com o site */
+  transition: filter 0.3s;
+}
+
+#mapa iframe:hover {
+    filter: grayscale(0); /* Fica colorido ao passar o mouse */
+}
+
+/* --- 12. NOTA DA DESENVOLVEDORA (ASIDE) --- */
+aside {
+    background-color: #222;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    margin-top: 2rem;
+}
+
+aside h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+aside > p {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    color: #ccc;
+    font-style: italic;
+}
+
+/* Secção Sobre Mim (Dentro do Aside) */
+#sobre img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* --- 13. FORMULÁRIO DE CONTACTO --- */
+#formulario {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#formulario h2 {
+    margin-bottom: 1rem;
+}
+
+#formulario > p {
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+}
+
+form {
+  text-align: left;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #444;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+label {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-family: var(--font-title);
+  letter-spacing: 1px;
+}
+
+/* Estilo dos Inputs (Melhoria de Acessibilidade) */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  background-color: #151515;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 5px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+/* Foco nos inputs (Importante para nota máxima) */
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 8px rgba(141, 182, 0, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: #000; /* Texto preto no fundo verde claro para leitura */
+  transform: translateY(-2px);
+}
+
+/* --- 14. RODAPÉ (FOOTER) --- */
+.main-footer {
+  background-color: #000;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 4px solid var(--primary-color);
+  margin-top: 4rem;
+}
+
+.main-footer p {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.main-footer small {
+  color: #666;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#contactos h3 {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+#contactos ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#contactos a {
+    color: #ccc;
+    font-size: 0.9rem;
+    border-bottom: 1px solid transparent;
+}
+
+#contactos a:hover {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    text-decoration: none;
+}

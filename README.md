@@ -23,7 +23,7 @@ Nesta primeira fase, o foco total foi na **Estrutura HTML5 Semântica**. Nada de
 
 - **HTML5:** A estrutura óssea do projeto.
 - **Git & GitHub:** Para versionamento e "sobrevivência" do código.
-- _(Em breve)_ **CSS3:** Para dar vida e estilo visual.
+- _(Em construção)_ **CSS3:** Para dar vida e estilo visual.
 
 ## 🗺️ Roteiro de Desenvolvimento (Roadmap)
 

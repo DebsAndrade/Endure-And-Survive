@@ -174,119 +174,136 @@
         </figure>
       </section>
 
-      <aside id="crafting">
-        <h2>Manual de Sobrevivência</h2>
-        <table>
-          <caption>
-            Recursos e Receitas
-          </caption>
-          <thead>
-            <tr>
-              <th>Ícone</th>
-              <th>Item</th>
-              <th>Receita</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src="assets/img/medkit.png" alt="Ícone Kit Médico" />
-              </td>
-              <td>Kit Médico</td>
-              <td>Álcool + Trapo</td>
-            </tr>
-            <tr>
-              <td>
-                <img src="assets/img/molotov.jpg" alt="Ícone Molotov" />
-              </td>
-              <td>Coquetel Molotov</td>
-              <td>Álcool + Trapo</td>
-            </tr>
-          </tbody>
-        </table>
-      </aside>
-
       <section id="infeccao">
         <h2>Estágios da Infeção</h2>
+        <p>
+          Passe o cursor (ou toque) nos cartões para revelar os dados da FEDRA.
+        </p>
 
-        <article>
-          <h3>Estágio 1: Runner (Corredor)</h3>
-          <figure>
-            <img src="assets/img/runner.webp" alt="Runner correndo" />
-            <figcaption>Rápidos e Agressivos</figcaption>
-          </figure>
-          <p>
-            1 a 2 dias após a infeção. Mantêm aparência humana, mas perdem a
-            consciência.
-          </p>
-        </article>
+        <div class="infetados-grid">
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/img/runner.webp" alt="Runner" />
+                <h3>Runner</h3>
+                <span class="aviso">Ver Dados</span>
+              </div>
+              <div class="flip-card-back">
+                <h3>Estágio 1</h3>
+                <h4>(Corredor)</h4>
+                <hr />
+                <p><strong>Tempo:</strong> 1-2 dias</p>
+                <p>
+                  <strong>Comportamento:</strong> Mantêm aparência humana, mas
+                  perdem a consciência. São extremamente rápidos e atacam em
+                  bando.
+                </p>
+              </div>
+            </div>
+          </article>
 
-        <article>
-          <h3>Estágio 2: Stalker (Perseguidor)</h3>
-          <figure>
-            <img src="assets/img/stalker.webp" alt="Stalker nas sombras" />
-            <figcaption>Furtivos e Estratégicos</figcaption>
-          </figure>
-          <p>
-            Escondem-se no escuro e planeiam emboscadas. O fungo começa a
-            crescer na cabeça.
-          </p>
-        </article>
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/img/stalker.webp" alt="Stalker" />
+                <h3>Stalker</h3>
+                <span class="aviso">Ver Dados</span>
+              </div>
+              <div class="flip-card-back">
+                <h3>Estágio 2</h3>
+                <h4>(Perseguidor)</h4>
+                <hr />
+                <p><strong>Tempo:</strong> 2 semanas - 1 ano</p>
+                <p>
+                  <strong>Comportamento:</strong> Escondem-se no escuro e
+                  planeiam emboscadas silenciosas. O fungo começa a sair pelos
+                  olhos.
+                </p>
+              </div>
+            </div>
+          </article>
 
-        <article>
-          <h3>Estágio 3: Clicker (Estalador)</h3>
-          <figure>
-            <img src="assets/img/clicker.webp" alt="Clicker cego" />
-            <figcaption>Cegos e Letais</figcaption>
-          </figure>
-          <p>
-            Totalmente cegos. Usam ecolocalização para caçar. Força
-            sobre-humana.
-          </p>
-        </article>
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/img/clicker.webp" alt="Clicker" />
+                <h3>Clicker</h3>
+                <span class="aviso">Ver Dados</span>
+              </div>
+              <div class="flip-card-back">
+                <h3>Estágio 3</h3>
+                <h4>(Estalador)</h4>
+                <hr />
+                <p><strong>Tempo:</strong> 1+ ano</p>
+                <p>
+                  <strong>Comportamento:</strong> Totalmente cegos. Usam
+                  ecolocalização (sons de estalo) para caçar. Força sobre-humana
+                  e letais.
+                </p>
+              </div>
+            </div>
+          </article>
 
-        <article>
-          <h3>Estágio 4: Bloater (Verme)</h3>
-          <figure>
-            <img src="assets/img/bloater.webp" alt="Bloater gigante" />
-            <figcaption>Tanques Blindados</figcaption>
-          </figure>
-          <p>
-            Cobertos por placas de fungo à prova de balas. Lançam bombas de
-            esporos.
-          </p>
-        </article>
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/img/bloater.webp" alt="Bloater" />
+                <h3>Bloater</h3>
+                <span class="aviso">Ver Dados</span>
+              </div>
+              <div class="flip-card-back">
+                <h3>Estágio 4</h3>
+                <h4>(Verme)</h4>
+                <hr />
+                <p><strong>Tempo:</strong> Vários anos</p>
+                <p>
+                  <strong>Comportamento:</strong> Lentos, mas cobertos de placas
+                  de fungo à prova de balas. Arremessam bombas de esporos.
+                </p>
+              </div>
+            </div>
+          </article>
 
-        <article>
-          <h3>Estágio Alternativo: Shambler (Trôpego)</h3>
-          <figure>
-            <img
-              src="assets/img/shambler.webp"
-              alt="Shambler coberto de pústulas ácidas"
-            />
-            <figcaption>Bombardeiros de Ácido</figcaption>
-          </figure>
-          <p>
-            Uma evolução húmida dos Bloaters. Em vez de armadura, possuem
-            pústulas que explodem e libertam gás ácido corrosivo em área.
-          </p>
-        </article>
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/img/shambler.webp" alt="Shambler" />
+                <h3>Shambler</h3>
+                <span class="aviso">Ver Dados</span>
+              </div>
+              <div class="flip-card-back">
+                <h3>Alternativo</h3>
+                <h4>(Trôpego)</h4>
+                <hr />
+                <p><strong>Ambiente:</strong> Zonas húmidas</p>
+                <p>
+                  <strong>Comportamento:</strong> Soltam nuvens de gás ácido
+                  corrosivo que queimam a pele. Explodem ao morrer.
+                </p>
+              </div>
+            </div>
+          </article>
 
-        <article>
-          <h3>Anomalia Única: The Rat King</h3>
-          <figure>
-            <img
-              src="assets/img/ratking.webp"
-              alt="Massa gigante de vários infetados fundidos"
-            />
-            <figcaption>O Pesadelo de Seattle</figcaption>
-          </figure>
-          <p>
-            Uma super-colónia formada por vários Stalkers, Clickers e um Bloater
-            fundidos durante décadas no hospital. A entidade mais forte já
-            registada.
-          </p>
-        </article>
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/img/ratking.webp" alt="Rat King" />
+                <h3>Rat King</h3>
+                <span class="aviso">Ver Dados</span>
+              </div>
+              <div class="flip-card-back">
+                <h3>Anomalia</h3>
+                <h4>(Rei dos Ratos)</h4>
+                <hr />
+                <p><strong>Origem:</strong> Hospital de Seattle</p>
+                <p>
+                  <strong>Comportamento:</strong> Uma massa grotesca de vários
+                  infetados fundidos ao longo de 25 anos. O pesadelo supremo.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="mapa">
@@ -300,18 +317,28 @@
         >
         </iframe>
       </section>
-
-      <section id="sobre">
-        <h2>Sobre a Desenvolvedora</h2>
-        <figure>
-          <img
-            src="assets/img/debora.jpg"
-            alt="Foto de perfil de Débora Andrade a sorrir"
-          />
-          <figcaption>Débora Andrade</figcaption>
-        </figure>
-        <p>Desenvolvedora Front-end apaixonada por tecnologia e jogos.</p>
-      </section>
+      
+      <aside>
+        <h2>Nota da Desenvolvedora</h2>
+        <p>
+          Este projeto é um tributo ao incrível universo de The Last of Us. Foi
+          desenvolvido como parte do meu portfólio pessoal para demonstrar
+          minhas habilidades em desenvolvimento front-end. Todas as imagens e
+          vídeos utilizados são propriedade da Naughty Dog e Sony Interactive
+          Entertainment. Este site não tem fins lucrativos.
+        </p>
+        <section id="sobre">
+          <h2>Sobre a Desenvolvedora</h2>
+          <figure>
+            <img
+              src="assets/img/debora.jpg"
+              alt="Foto de perfil de Débora Andrade a sorrir"
+            />
+            <figcaption>Débora Andrade</figcaption>
+          </figure>
+          <p>Desenvolvedora Front-end apaixonada por tecnologia e jogos.</p>
+        </section>
+      </aside>
 
       <section id="formulario">
         <h2>Enviar Transmissão (Contacto)</h2>

@@ -369,7 +369,7 @@ details[open] summary {
   transition: transform 0.8s; /* Tempo da animação */
   transform-style: preserve-3d; /* Permite elementos 3D filhos */
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* AÇÃO DE GIRAR (Ao passar o mouse ou focar) */
@@ -379,7 +379,8 @@ details[open] summary {
 }
 
 /* ESTILO COMUM DA FRENTE E DO VERSO */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -484,7 +485,7 @@ details[open] summary {
 }
 
 #mapa h2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 #mapa iframe {
@@ -493,45 +494,45 @@ details[open] summary {
   height: 450px;
   border: 3px solid #333;
   border-radius: 8px;
-  filter: grayscale(0.5); /* Deixa o mapa meio cinza para combinar com o site */
+  filter: grayscale(0.7); /* Deixa o mapa meio cinza para combinar com o site */
   transition: filter 0.3s;
 }
 
 #mapa iframe:hover {
-    filter: grayscale(0); /* Fica colorido ao passar o mouse */
+  filter: grayscale(0); /* Fica colorido ao passar o mouse */
 }
 
 /* --- 12. NOTA DA DESENVOLVEDORA (ASIDE) --- */
 aside {
-    background-color: #222;
-    padding: 4rem 2rem;
-    text-align: center;
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
-    margin-top: 2rem;
+  background-color: #222;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  margin-top: 2rem;
 }
 
 aside h2 {
-    color: var(--accent-color);
-    margin-bottom: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
 }
 
 aside > p {
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-    color: #ccc;
-    font-style: italic;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  color: #ccc;
+  font-style: italic;
 }
 
 /* Secção Sobre Mim (Dentro do Aside) */
 #sobre img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid var(--primary-color);
-    margin-bottom: 1rem;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 /* --- 13. FORMULÁRIO DE CONTACTO --- */
@@ -543,12 +544,12 @@ aside > p {
 }
 
 #formulario h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #formulario > p {
-    color: #a0a0a0;
-    margin-bottom: 2rem;
+  color: #a0a0a0;
+  margin-bottom: 2rem;
 }
 
 form {
@@ -557,7 +558,7 @@ form {
   padding: 2rem;
   border-radius: 10px;
   border: 1px solid #444;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 label {
@@ -568,7 +569,9 @@ label {
 }
 
 /* Estilo dos Inputs (Melhoria de Acessibilidade) */
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 12px;
   margin-top: 8px;
@@ -582,7 +585,9 @@ input, select, textarea {
 }
 
 /* Foco nos inputs (Importante para nota máxima) */
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border-color: var(--accent-color);
   outline: none;
   box-shadow: 0 0 8px rgba(141, 182, 0, 0.3);
@@ -621,11 +626,11 @@ button:hover {
 }
 
 .main-footer p {
-    font-family: var(--font-title);
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    color: #fff;
-    margin-bottom: 0.5rem;
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 .main-footer small {
@@ -635,9 +640,9 @@ button:hover {
 }
 
 #contactos h3 {
-    font-size: 1.2rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
 }
 
 #contactos ul {
@@ -649,13 +654,154 @@ button:hover {
 }
 
 #contactos a {
-    color: #ccc;
-    font-size: 0.9rem;
-    border-bottom: 1px solid transparent;
+  color: #ccc;
+  font-size: 0.9rem;
+  border-bottom: 1px solid transparent;
 }
 
 #contactos a:hover {
-    color: var(--accent-color);
-    border-bottom: 1px solid var(--accent-color);
-    text-decoration: none;
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  text-decoration: none;
+}
+/* --- 15. MEDIA QUERIES (RESPONSIVIDADE E MENU HAMBÚRGUER) --- */
+
+/* Por padrão (Desktop), o botão hambúrguer fica escondido */
+#burger-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* 1. Ajustes do Header para Mobile */
+  header {
+    /* Mantemos o header fixo, mas permitimos que os elementos fluam */
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    z-index: 101; /* Fica acima do menu overlay */
+    position: relative;
+  }
+
+  /* 2. Estilo do Botão Hambúrguer (Container) */
+  #burger-menu {
+    display: block; /* Agora aparece */
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 102; /* Fica MUITO acima de tudo para poder ser clicado */
+  }
+
+  /* As 3 linhas do hambúrguer (span e seus pseudo-elementos) */
+  #burger-menu span,
+  #burger-menu span::before,
+  #burger-menu span::after {
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Linha do Meio */
+  #burger-menu span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Linha de Cima */
+  #burger-menu span::before {
+    content: "";
+    top: -10px;
+  }
+
+  /* Linha de Baixo */
+  #burger-menu span::after {
+    content: "";
+    top: 10px;
+  }
+
+  /* --- ANIMAÇÃO: Quando o botão tem a classe 'close' (vira um X) --- */
+  #burger-menu.close span {
+    background-color: transparent; /* A linha do meio fica invisível */
+  }
+
+  #burger-menu.close span::before {
+    top: 0;
+    transform: rotate(45deg); /* Gira 45 graus */
+    background-color: var(--accent-color); /* Fica verde */
+  }
+
+  #burger-menu.close span::after {
+    top: 0;
+    transform: rotate(-45deg); /* Gira -45 graus */
+    background-color: var(--accent-color); /* Fica verde */
+  }
+
+  /* 3. O Menu de Navegação (Overlay) */
+  #menu {
+    position: fixed; /* Fixado na tela inteira */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Altura total da viewport */
+    background-color: rgba(0, 0, 0, 0.95); /* Fundo quase preto */
+
+    /* Flexbox para centralizar os links */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Efeitos de transição (aparecer suavemente) */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 100; /* Fica abaixo do botão hambúrguer e do logo */
+  }
+
+  /* Quando o menu tem a classe 'overlay' (Ativado pelo JS) */
+  #menu.overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Estilo da lista dentro do menu mobile */
+  #menu ul {
+    flex-direction: column; /* Links um embaixo do outro */
+    gap: 2rem; /* Espaço entre os links */
+    text-align: center;
+  }
+
+  #menu ul li a {
+    font-size: 1.5rem; /* Links maiores no telemóvel */
+    color: #fff;
+  }
+
+  /* --- CORREÇÃO DA SECÇÃO FACÇÕES (MOBILE) --- */
+
+  /* Ajusta o container do sumário para aproveitar melhor o espaço */
+  #faccoes details summary {
+    padding: 1rem; /* Reduz um pouco o enchimento interno */
+    gap: 15px; /* Espaço entre a imagem e o texto */
+    white-space: normal;
+    line-height: 1.3; /* Melhora a leitura quando o texto ocupa duas linhas */
+  }
+
+  /* O TRUQUE: Reduz drasticamente a imagem no telemóvel */
+  #faccoes details summary img {
+    width: 60px; /* Era 180px, agora fica um ícone elegante */
+    height: 60px; /* Mantém a proporção quadrada */
+    min-width: 60px; /* Impede que a imagem seja esmagada se o texto for muito longo */
+  }
+
+  /* Ajusta o tamanho da fonte para não ficar gigante ao lado do ícone pequeno */
+  #faccoes details summary strong {
+    font-size: 1.1rem;
+  }
 }

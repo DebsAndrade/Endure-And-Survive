@@ -56,6 +56,13 @@ O projeto evoluiu de uma estrutura básica para uma experiência completa:
 
 ---
 
+## 📚 Referências e Créditos
+
+O desenvolvimento deste projeto contou com materiais de apoio para a criação do Menu Hambúrguer Responsivo:
+
+- [Codepen - Joseph Sayegh](https://codepen.io/joesayegh/pen/jOEVPKO)
+- [DEV Community](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
+
 <div align="center">
   <sub>Desenvolvido por <strong>Débora Andrade</strong> 👩‍💻</sub><br>
   <sub><i>"Resistir e Sobreviver."</i></sub>
